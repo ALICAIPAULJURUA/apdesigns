@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #04aef1;
+    padding: 10px 20px;
+    color: #3703f3;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.donate-button {
+    background: #e63946;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    margin: 0;
+    z-index: 2;
+    padding: 20px;
+}
+
+#custom-solutions {
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+#custom-solutions p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #fff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-button:hover {
+    background: #d62828;
+}
+
+.offering-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.offering {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.offering img {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #04aef1;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Team Page Styles */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.team-member p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero h1 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero h1 {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .about-button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    .team-container {
+        padding: 10px;
+    }
+
+    .team-member {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

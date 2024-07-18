@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - AP Designs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="donate.css">
+    <link rel="icon" href="ap-icon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AP Designs Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Offerings</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donate.html" class="donate-button">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="donate">
+        <h1>Donate</h1>
+        <p>Your support helps us continue our work. Please choose a payment method below:</p>
+        
+        <div class="payment-options">
+            <div class="payment-option">
+                <h2>Credit/Debit Card</h2>
+                <form action="#" method="POST">
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card-name" required>
+
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+
+                    <label for="exp-date">Expiry Date:</label>
+                    <input type="month" id="exp-date" name="exp-date" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+
+                    <button type="submit">Donate</button>
+                </form>
+            </div>
+
+            <div class="payment-option">
+                <h2>PayPal</h2>
+                <form action="https://www.paypal.com/donate" method="POST">
+                    <label for="paypal-email">PayPal Email:</label>
+                    <input type="email" id="paypal-email" name="paypal-email" required>
+                    <button type="submit">Donate with PayPal</button>
+                </form>
+            </div>
+
+            <div class="payment-option">
+                <h2>Flexipay</h2>
+                <form action="#" method="POST">
+                    <label for="flexipay-phone">Phone Number:</label>
+                    <input type="text" id="flexipay-phone" name="flexipay-phone" required>
+
+                    <label for="flexipay-amount">Amount:</label>
+                    <input type="number" id="flexipay-amount" name="flexipay-amount" required>
+
+                    <button type="submit">Donate with Flexipay</button>
+                </form>
+            </div>
+
+            <div class="payment-option">
+                <h2>Cryptocurrency</h2>
+                <form action="#" method="POST">
+                    <label for="crypto-type">Cryptocurrency Type:</label>
+                    <select id="crypto-type" name="crypto-type" required>
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="litecoin">Litecoin</option>
+                    </select>
+
+                    <label for="crypto-wallet">Wallet Address:</label>
+                    <input type="text" id="crypto-wallet" name="crypto-wallet" required>
+                    <button type="submit">Donate with Crypto</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AP Designs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
